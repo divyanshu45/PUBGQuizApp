@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo2"
+        android:layout_alignParentTop="true"
+        android:layout_margin="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CATEGORIES"
+        android:textColor="@android:color/white"
+        android:layout_above="@id/rv_modes"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_modes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:layout_margin="5dp"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START RANDOM"
+        android:layout_below="@id/rv_modes"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_bg"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

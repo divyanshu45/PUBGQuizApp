@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@drawable/main_bg"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_win"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/win_bg"
+        android:orientation="vertical"
+        android:layout_marginLeft="14dp"
+        android:elevation="20dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="100dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CONGRATULATIONS"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_im"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="16dp"
+            android:src="@drawable/gold"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="You gave 9 correct answers\nOut of 10 questions"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/btn_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="END QUIZ"
+        android:textSize="20sp"
+        android:layout_margin="18dp"
+        android:padding="10dp"
+        android:background="@drawable/btn_bg"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_win"/>
+
+</RelativeLayout>
